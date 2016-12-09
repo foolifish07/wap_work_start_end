@@ -2,8 +2,14 @@
 wap work start, work end
 
 ```
-touch accounts.js
+npm install 
+node ./main.js &
+```
 
+need 'accounts.js' file under project
+
+Example:
+```
 var accounts = [
 	{
 		username: '',
@@ -14,5 +20,3 @@ var accounts = [
 module.exports = accounts
 ```
 
-npm install 
-node ./main.js &

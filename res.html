@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta name="robots" content="NOINDEX, NOFOLLOW">
+<meta name="robots" content="NONE">
+<title>WEB�ō�</title>
+<script language="javascript" charset="Shift_JIS">
+<!--
+var apgaptime;
+var localcounttime;
+var timegap;
+var reload_term = 0; 
+function setfocus(){document.webdakoku.back.focus();}
+function SetGapTime(){
+var day = new Date(); 
+var localtime = day.getTime() ;var aptime = 1481261648953; 
+apgaptime = aptime - localtime;localcounttime = localtime + 0 + apgaptime;
+timegap = -day.getTimezoneOffset()}
+
+function TimeWatch() {
+var day = new Date();
+    var time = day.getTime();
+    document.getElementById("timezone").value=timegap;
+    time = time +0+ apgaptime;
+if( (   Math.abs(time - localcounttime) >  reload_term )  && (reload_term != 0))      location.reload();
+     day.setTime(time);
+    if ( day.getYear() >= 2000 ){ var year = day.getYear() }
+    else {  var year = day.getYear() +1900 }
+    var month = day.getMonth()+1;
+    var date = day.getDate();
+    var hour = day.getHours();
+    var min = day.getMinutes();
+    var sec = day.getSeconds();
+        if (month < 10) {    //��.�����ꌅ�̎�����0���t���鏈��
+            month = "0" + month;
+                         }
+        if (date < 10) {
+            date = "0" + date;
+                        }
+        if (hour < 10) { //���E���E�b��1���̎�����0���t���鏈��
+            hour = "0" + hour;
+                        }
+        if (min < 10) {
+            min = "0" + min;
+                       }
+        if (sec < 10) {
+            sec = "0" + sec;
+                       }
+    tokei.innerHTML=' '+year+'�N'+month+'��'+date+'�� '+hour+'��'+min+'��'+sec+'�b';
+      localcounttime = time + 1000;    setTimeout("TimeWatch()", 1000);
+}
+-->
+</script>
+<link rel="stylesheet" href="../navigation.css">
+<link rel="stylesheet" href="../cssdir/cws30/style30.css" type="text/css">
+</head>
+<body onLoad=SetGapTime();TimeWatch();setfocus()>
+<form  name="webdakoku" method="POST" action="srwtimerec"  onSubmit="return false"><input type="hidden" name="dakoku" id="dakoku" value="NONE">
+<input type="hidden" name="timezone" id="timezone" value="NONE">
+
+
+<div class="pagetop"><a name="PAGETOP"></a></div>
+<!-- �w�b�_�[ -->
+<div id="cwsheader" style='background-image:url(../images/cws30/head_bg.gif);background-repeat:repeat-x;height:91px;white-space:nowrap;'>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+    <tr>
+      <td>
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+          <tr>
+            <td width="205"><img src="../images/cws30/head_logo1.gif" height="50" width="121"></td>
+            <td>&nbsp;</td>
+            <td align="center" width="100px"></td>
+          </tr>
+          </tbody>
+        </table>
+      </td>
+      <td align="right"><img src="../images/cws30/head_logo2.gif" height="50" width="118"></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<style type="text/css">
+
+input.example, select {
+width: 300px;
+}
+textarea {
+width: 300px;
+height: 7em;
+}
+
+input:focus, select:focus, textarea:focus {
+outline: 2px #ff0000 dashed;
+}
+
+</style>
+<!-- �w�b�_�[/ --><BR/><BR/><BR/>
+
+
+
+
+
+<table border="0" cellpadding="2" align="center">
+  <tr> 
+    <td nowrap colspan="5" valign="bottom" align="center">
+    	<font size="+1">
+    		
+    		    		
+    		
+    		    		<b>�o�Ў������L�^���܂���<br>Your attendance was recorded.</b> <br> <br>
+
+<br><br>
+    		    		
+    		    		
+			    		
+			    	</font>
+    </td>
+  </tr>
+</table>
+
+
+
+
+<br>
+<table border="0" cellpadding="2" align="center">
+  <tr> 
+    <td nowrap colspan="4" valign="bottom" align="center">
+    	<font color="#808080"  size="+2">
+    	<u> 2016�N12��09��  13��34��08�b </u>
+    	</font>
+    </td>
+  </tr>
+</table>
+<br>
+
+
+
+   	
+   	<br>   	
+   	<br>   	
+   	<br>
+   	<a href="https://ckip.worksap.co.jp/cws/cws/cws"><center>CWS���O�C������ �| Login to CWS</center></a><br>
+   	<br>
+   	
+   	
+
+
+
+
+			<table border="0" cellpadding="3" align="center" cellspacing="2">
+ 		<tr> 
+			<td valign="top"> 
+      		<input type="button" name="back" value=" �� �� / Back "
+       		onClick='getElementById("dakoku").value="back";submit();' >
+    		</td>
+  		</tr>
+	</table>
+	
+
+
+     	
+   	   	
+   	
+   	
+   	
+
+	
+	
+	
+
+	
+<table border="0" align="center">
+  <tr>
+    <td>
+      <strong>&nbsp;</strong>
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+
+<table border="0" align="center">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</table>
+<br>
+<input type="hidden" name="watch">
+
+<table border="0" align="center">
+  <tr> 
+    <td>
+    
+            <font color="#000080" size="+1" id=tokei></font>
+    
+    </td>
+  </tr>
+</table>
+
+
+
+<BR/><BR/><BR/><BR/><BR/>		<!-- �t�b�^�[ -->
+	<div id="futter">
+		�A�J�E�v���W�F�N�g�Ǘ� Version 3.701.02.00 / 2001 - 2007 
+		COPYRIGHT 
+		<a href="#">WORKS APPLICATIONS</a> CO.,LTD All right reserved.
+	</div>
+	<!-- �t�b�^�[ end-->
+
+</form>
+</body>
+</html>
+

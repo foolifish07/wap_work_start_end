@@ -1,5 +1,5 @@
 var st = {
-	time: {hour: 17, interval: 10},
+	time: {hour: 9, interval: 60},
 	url: 'https://ckip.worksap.co.jp/cws/cws/srwtimerec',
 	dataMap: function (username, passwd){
 		return 	{
@@ -12,7 +12,7 @@ var st = {
 	}
 }
 var ed = {
-	time: {hour: 12, interval: 10},
+	time: {hour: 18, interval: 60},
 	url: 'https://ckip.worksap.co.jp/cws/cws/srwtimerec',
 	dataMap: function (username, passwd){
 		return 	{

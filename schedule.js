@@ -27,7 +27,7 @@ function timeoutpost(interval, fn){
 }
 
 function main(){
-	schedule.scheduleJob('*/3 * * * * *', task);
+	schedule.scheduleJob('0 0 */1 * * *', task);
 }
 
 module.exports = main;
